@@ -1,0 +1,76 @@
+<mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+        <img src="../../assets/googleImage.jpg" alt="googleImage" class="googleImage">
+    </mat-card-header>
+    <div class="card-content">
+      <div class="content-left">
+        <h1 class="mainHeading">Basic information</h1>
+        <h4 class="mainHeading-side2">Enter Your birthday and gender</h4>
+      </div>
+      <div class="content-right">
+        <form class="inputForm">
+                <mat-form-field class="DateModel" appearance="outline">
+                    <div class="BirthDate">
+                        <div>
+                            <fieldset class="selectMonth">
+                                <legend>Month</legend>
+                                <mat-select>
+                                  <mat-option value="1">Jan</mat-option>
+                                  <mat-option value="2">Feb</mat-option>
+                                  <mat-option value="3">Mar</mat-option>
+                                </mat-select>
+                              </fieldset>
+                        </div>
+                        <div>
+                            <fieldset class="selectDay">
+                                <legend>Day</legend>
+                                <input matInput placeholder="Day">
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset class="selectYear">
+                                <legend>Year</legend>
+                                <input matInput placeholder="Year">
+                            </fieldset>
+                        </div>
+                    </div>
+                  </mat-form-field>
+        </form> 
+        <form>
+            <fieldset class="genderBox">
+                <legend>Gender</legend>
+                <mat-select>
+                    <mat-option class="opt" value="Male">Male</mat-option>
+                    <mat-option class="opt" value="Female">Female</mat-option>
+                    <mat-option class="opt" value="Rather">Rather not Say</mat-option>
+                  </mat-select>
+            </fieldset>
+        </form>
+      </div>  
+    </div>
+    <p class="infowarn">Why we ask for birthday and gender</p>
+    <mat-card-actions>
+        <button class="Next" mat-button>Next</button>
+    </mat-card-actions>    
+    </mat-card> 
+    
+    <mat-form-field class="btm" appearance="fill" >
+      <mat-select [value]="'en-US'">
+        <mat-option class="opt" value="en-US">English (United States)</mat-option>
+        <mat-option class="opt" value="fr">French</mat-option>
+        <mat-option class="opt" value="de">German</mat-option>
+        <mat-option class="opt" value="it">Italian</mat-option>
+        <mat-option class="opt" value="es">Spanish</mat-option>
+        <mat-option class="opt" value="pt">Portuguese</mat-option>
+        <mat-option class="opt" value="ja">Japanese</mat-option>
+        <mat-option class="opt" value="ko">Korean</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button class="footerbutton" mat-button>Help</button>
+    <button class="footerbutton1" mat-button>Privacy</button>
+    <button class="footerbutton1" mat-button>Terms</button>
+    
+    
+      
+    
+    
