@@ -7,8 +7,8 @@ import { InfoComponent } from './info/info.component';
 const routes: Routes = [
   {path:'birthdetails',component:InfoComponent},
   {path:'register',component:RegisterComponent},
-  {path:'',component:LoginComponent},
-];
+  {path:'',component:LoginComponent}, 
+];  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
