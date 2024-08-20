@@ -16,13 +16,34 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { InfoComponent } from './info/info.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { PasswordPageComponent } from './password-page/password-page.component';
+import { ConfirmpasswordComponent } from './confirmpassword/confirmpassword.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule} from '@angular/forms';
+import { DashboardComponentComponent } from './dashboard-component/dashboard-component.component';
+import { NotesContainerComponent } from './notes-container/notes-container.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { NoteCardComponent } from './note-card/note-card.component';
+import { AddNoteComponent } from './add-note/add-note.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    InfoComponent
+    InfoComponent,
+    PasswordPageComponent,
+    ConfirmpasswordComponent,
+    DashboardComponentComponent,
+    NotesContainerComponent,
+    NavbarComponent,
+    SideBarComponent,
+    NoteCardComponent,
+    AddNoteComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +57,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatSelectModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

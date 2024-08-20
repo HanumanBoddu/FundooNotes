@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { UserServiceService } from './Services/user-service.service';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +9,6 @@ import { UserServiceService } from './Services/user-service.service';
 
 export class AppComponent {
   title = 'fundooNotes';
-  constructor(private userService:UserServiceService){}
-  addItem(item:string){
-     this.userService.addUser(item);
-  }
-
-  getItems(){
-    return this.userService.getUsers();
-  }
+  obj:any={email:"",password:""};
+  constructor(){}
 }
