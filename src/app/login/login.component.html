@@ -8,11 +8,14 @@
     <h4>to Continue in Gmail</h4>
   </div>
   <div class="content-right">
-    <form>
+    <form [formGroup]="loginForm">
       <mat-form-field appearance="outline">
         <mat-label>Email or Phone</mat-label>
-        <input matInput placeholder="Email">
+        <input matInput placeholder="Email" formControlName="email">
       </mat-form-field>
+      <div class="emailError" *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)">
+        provide a valid email.
+      </div>
     </form> 
     <a class="mat-form-field[_ngcontent-gjq-c88]" href="../register/register.component.html">Forgot email?</a>
     <p class="message">
@@ -23,7 +26,7 @@
 </div>
 <mat-card-actions>
     <a [routerLink]="['/register']" class="createAccount">Create Account</a>
-    <button class="nextButton" mat-button>Next</button>
+    <button [routerLink]="['/password']" class="nextButton" (click)="handleLogin()"  mat-button>Next</button>
 </mat-card-actions>    
 </mat-card> 
 
