@@ -117,9 +117,17 @@ mat-card-actions{
     background-color: #0b57d0 !important;
 }
 
-.selectMonth,.selectDay,.selectYear{
-    width:70px;
+fieldset.selectDay{
+    width: 30px !important;
+}
+.selectMonth,.selectYear{
+    width: 30px !important;
     border-radius: 5px;
+}
+
+.selectDay{
+    margin-left: 10px;
+    width: 30px !important;
 }
 
 .BirthDate{
@@ -173,6 +181,21 @@ mat-card-actions{
         transform: none !important;
 }
 
-// .monthOptions{
-//     transform: translate(0,250%) !important;
-// }
+.dayDiv{
+    margin-left: 10px !important;
+    width: 120px;
+}
+
+.monthDiv{
+    margin-left: 215px !important;
+    width: 120px;
+}
+
+.yearDiv{
+    margin-left: 10px !important;
+    width: 120px;
+}
+
+.BirthDate{
+    max-width:400px;
+}

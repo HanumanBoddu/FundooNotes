@@ -9,41 +9,41 @@
       </div>
       <div class="content-right">
         <form class="inputForm">
-                <mat-form-field class="DateModel">
+                <!-- <mat-form-field class="DateModel"> -->
                     <div class="BirthDate">
-                        <div>
+                        <div class="monthDiv">
                             <fieldset class="selectMonth">
                                 <legend>Month</legend>
-                                <mat-select class="monthOptions">
-                                  <mat-option value="1">January</mat-option>
-                                  <mat-option value="2">February</mat-option>
-                                  <mat-option value="3">March</mat-option>
-                                  <mat-option value="4">April</mat-option>
-                                  <mat-option value="4">May</mat-option>
-                                  <mat-option value="4">June</mat-option>
-                                  <mat-option value="4">July</mat-option>
-                                  <mat-option value="4">August</mat-option>
-                                  <mat-option value="4">September</mat-option>
-                                  <mat-option value="4">October</mat-option>
-                                  <mat-option value="4">November</mat-option>
-                                  <mat-option value="4">December</mat-option>
+                                <mat-select>
+                                  <mat-option value="1">Jan</mat-option>
+                                  <mat-option value="2">Feb</mat-option>
+                                  <mat-option value="3">Mar</mat-option>
+                                  <mat-option value="4">Apr</mat-option>
+                                  <mat-option value="5">May</mat-option>
+                                  <mat-option value="6">Jun</mat-option>
+                                  <mat-option value="7">Jul</mat-option>
+                                  <mat-option value="8">Aug</mat-option>
+                                  <mat-option value="9">Sep</mat-option>
+                                  <mat-option value="10">Oct</mat-option>
+                                  <mat-option value="11">Nov</mat-option>
+                                  <mat-option value="12">Dec</mat-option>
                                 </mat-select>
                               </fieldset>
                         </div>
-                        <div>
+                        <div class="dayDiv">
                             <fieldset class="selectDay">
                                 <legend>Day</legend>
-                                <input matInput placeholder="Day">
+                                <input placeholder="Day" style="width:58px">
                             </fieldset>
                         </div>
-                        <div>
+                        <div class="yearDiv" >
                             <fieldset class="selectYear">
                                 <legend>Year</legend>
-                                <input matInput placeholder="Year">
+                                <input placeholder="Year" style="width:58px">
                             </fieldset>
                         </div>
                     </div>
-                  </mat-form-field>
+                  <!-- </mat-form-field> -->
         </form> 
         <form>
             <fieldset class="genderBox">
@@ -59,7 +59,7 @@
     </div>
     <p class="infowarn">Why we ask for birthday and gender</p>
     <mat-card-actions>
-        <button class="Next" mat-button>Next</button>
+        <button class="Next" mat-button [routerLink]="['/confirmpassword']">Next</button>
     </mat-card-actions>    
     </mat-card> 
     
