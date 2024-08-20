@@ -12,9 +12,4 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  toredirect(){
-    this.route.navigate(['/dashboard/notes']);
-  }
-
 }

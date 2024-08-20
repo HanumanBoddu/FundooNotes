@@ -12,7 +12,7 @@ export class ArchiveComponent implements OnInit {
   constructor(private notesService:NotesService) { }
 
   ngOnInit(): void {
-    this.notesService.getAllNotes('getArchiveNotesList').subscribe({
+    this.notesService.getArchiveNotes('getArchiveNotesList').subscribe({
       next:(res:any)=>{
         console.log(res.data.data);
         this.ArchiveListNotes=res.data.data;

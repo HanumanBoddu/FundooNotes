@@ -17,4 +17,7 @@ export class NotesService {
   getTrashNotes(url:any){
     return this.httpService.GetService(`${this.baseurl}/${url}?access_token=${this.access_token}`);
   }
+  getArchiveNotes(url:any){
+    return this.httpService.GetService(`${this.baseurl}/${url}?access_token=${this.access_token}`);
+  }
 }

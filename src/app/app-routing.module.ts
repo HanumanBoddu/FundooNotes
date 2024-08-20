@@ -16,9 +16,10 @@ const routes: Routes = [
     children: [
       { path: 'notes', component: NotesContainerComponent },
       {path:'trash',component:TrashComponent},
-      {path:'archive',component:ArchiveComponent}
     ]
   },
+  //{path:'dashboard/trash',component:TrashComponent},
+  {path:'dashboard/archive',component:ArchiveComponent},
   {path:'confirmpassword',component:ConfirmpasswordComponent},
   {path:'password',component:PasswordPageComponent},
   {path:'birthdetails',component:InfoComponent},

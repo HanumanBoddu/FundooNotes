@@ -1,4 +1,4 @@
-<mat-sidenav-container class="example-container">
+<!-- <mat-sidenav-container class="example-container">
     <mat-sidenav mode="side" opened>
       <mat-nav-list>
         <mat-list-item  [routerLink]="['/dashboard/notes']">
@@ -27,4 +27,28 @@
         </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>  
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+<div class="sidebar">
+  <div class="sidebar-contents" [routerLink]="['/dashboard/notes']">
+   <mat-icon>lightbulb</mat-icon>
+   <span>Notes</span>
+  </div>
+  <div class="sidebar-contents" [routerLink]="['/reminder']">
+   <mat-icon >notifications</mat-icon>
+   <span>Reminder</span>
+  </div>
+  <div class="sidebar-contents">
+   <mat-icon>edit</mat-icon>
+   <span>Edit label</span>
+  </div>
+  <div class="sidebar-contents" [routerLink]="['/dashboard/archive']">
+   <mat-icon>archive</mat-icon>
+   <span>Archive</span>
+  </div>
+  <div class="sidebar-contents" [routerLink]="['/dashboard/trash']">
+   <mat-icon >delete</mat-icon>
+   <span>Trash</span>
+  </div>
+</div>
+
