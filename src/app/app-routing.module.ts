@@ -7,9 +7,10 @@ import { PasswordPageComponent } from './password-page/password-page.component';
 import { ConfirmpasswordComponent } from './confirmpassword/confirmpassword.component';
 import { DashboardComponentComponent } from './dashboard-component/dashboard-component.component';
 import { NotesContainerComponent } from './notes-container/notes-container.component';
-
+import { AuthGuard } from './auth/auth.guard';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponentComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: 'notes', component: NotesContainerComponent },
     ]
