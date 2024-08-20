@@ -14,4 +14,7 @@ export class NotesService {
   addNotes(url:any,data:any){
     return this.httpService.pApiCall(`${this.baseurl}/${url}?access_token=${this.access_token}`,data);
   }
+  getTrashNotes(url:any){
+    return this.httpService.GetService(`${this.baseurl}/${url}?access_token=${this.access_token}`);
+  }
 }

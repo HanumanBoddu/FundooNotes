@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginserviceService } from '../Services/loginservice.service';
 import { UserService } from '../Services/user.service';
-import { Router } from '@angular/router'; // Import the Router module
+import { Router } from '@angular/router'; 
 import { HttpClient } from '@angular/common/http';
 
 @Component({

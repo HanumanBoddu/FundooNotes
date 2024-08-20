@@ -29,6 +29,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { NoteCardComponent } from './note-card/note-card.component';
 import { AddNoteComponent } from './add-note/add-note.component';
+import { TrashComponent } from './trash/trash.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { AddNoteComponent } from './add-note/add-note.component';
     SideBarComponent,
     NoteCardComponent,
     AddNoteComponent,
+    TrashComponent,
+    ArchiveComponent,
   ],
   imports: [
     BrowserModule,

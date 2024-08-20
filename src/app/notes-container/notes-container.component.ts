@@ -8,7 +8,6 @@ import { NavigationEnd } from '@angular/router';
   styleUrls: ['./notes-container.component.scss']
 })
 export class NotesContainerComponent implements OnInit {
-  // noteslist:any;
   @Input() noteslist:any;
   isNotesRoute:boolean=false;
   constructor(private notesService:NotesService, private router:Router) { }

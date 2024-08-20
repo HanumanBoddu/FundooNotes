@@ -8,11 +8,15 @@ import { ConfirmpasswordComponent } from './confirmpassword/confirmpassword.comp
 import { DashboardComponentComponent } from './dashboard-component/dashboard-component.component';
 import { NotesContainerComponent } from './notes-container/notes-container.component';
 import { AuthGuard } from './auth/auth.guard';
+import { TrashComponent } from './trash/trash.component';
+import { ArchiveComponent } from './archive/archive.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponentComponent,
     canActivate: [AuthGuard],
     children: [
       { path: 'notes', component: NotesContainerComponent },
+      {path:'trash',component:TrashComponent},
+      {path:'archive',component:ArchiveComponent}
     ]
   },
   {path:'confirmpassword',component:ConfirmpasswordComponent},
