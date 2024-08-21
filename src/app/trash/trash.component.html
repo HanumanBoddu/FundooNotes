@@ -1,6 +1,7 @@
-<p>trash works!</p>
+<app-navbar></app-navbar>
 <div class="notes-container">
-    <div *ngFor="let i of trashNotesList" style="margin: 10px;">
+    <app-side-bar></app-side-bar>
+    <div *ngFor="let i of trashNotesList" style="margin-left: 225px; margin-top: 10px;">
         <app-note-card  [note]="i"></app-note-card>
     </div>
 </div>

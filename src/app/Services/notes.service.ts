@@ -20,4 +20,7 @@ export class NotesService {
   getArchiveNotes(url:any){
     return this.httpService.GetService(`${this.baseurl}/${url}?access_token=${this.access_token}`);
   }
+  signUp(url:any,data:any){
+    return this.httpService.userSignUp(`${url}`,data);
+  }
 }

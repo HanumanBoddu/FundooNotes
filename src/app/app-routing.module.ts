@@ -15,10 +15,10 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       { path: 'notes', component: NotesContainerComponent },
-      {path:'trash',component:TrashComponent},
+      //{path:'trash',component:TrashComponent},
     ]
   },
-  //{path:'dashboard/trash',component:TrashComponent},
+  {path:'dashboard/trash',component:TrashComponent},
   {path:'dashboard/archive',component:ArchiveComponent},
   {path:'confirmpassword',component:ConfirmpasswordComponent},
   {path:'password',component:PasswordPageComponent},

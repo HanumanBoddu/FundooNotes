@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class HttpService {
   baseUrl:string="https://fundoonotes.incubation.bridgelabz.com/api/";
   uurl:string="https://fundoonotes.incubation.bridgelabz.com/api/";
+  signUrl:string="https://fundoonotes.incubation.bridgelabz.com/api/user/";
   constructor(private HttpClient:HttpClient) { }
   postApiCall(endpoint:string,data:any){
     return this.HttpClient.post(this.baseUrl+endpoint,data);
@@ -19,5 +20,8 @@ export class HttpService {
   }
   GetService(url:any){
     return this.HttpClient.get(this.baseUrl+url);
+  }
+  userSignUp(url:any,data:any){
+    return this.HttpClient.post(this.signUrl+url,data);
   }
 }

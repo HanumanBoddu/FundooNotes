@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  serachText:string='';
   constructor() { }
-
   ngOnInit(): void {
   }
-
+  onSearch(){
+    console.log(this.serachText);
+  }
 }

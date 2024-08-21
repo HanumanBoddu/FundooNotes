@@ -2,27 +2,27 @@
     <mat-card-header>
         <img src="../../assets/googleImage.jpg" alt="googleImage" class="googleImage">
     </mat-card-header>
-    <div class="card-content">
+    <div class="card-content" > 
       <div class="content-left">
         <h1 class="mainHeading">Create a Google</h1>
         <h1 class="mainHeading-side">Account</h1>
         <h4 class="mainHeading-side2">Enter Your Name</h4>
       </div>
       <div class="content-right">
-        <form>
+        <form [formGroup]="registerForm">
           <mat-form-field appearance="outline">
             <mat-label>First Name</mat-label>
-            <input matInput placeholder="First Name">
+            <input matInput placeholder="First Name" name="firstName" formControlName="firstName">
           </mat-form-field>
           <mat-form-field appearance="outline">
             <mat-label>Last Name(Optional)</mat-label>
-            <input matInput placeholder="Last Name(Optional)">
+            <input matInput placeholder="Last Name(Optional)" name="lastName" formControlName="lastName">
           </mat-form-field>
         </form> 
       </div>  
     </div>
     <mat-card-actions>
-        <button class="Next" mat-button [routerLink]="['/birthdetails']">Next</button>
+        <button class="Next" mat-button [routerLink]="['/birthdetails']" (click)="onsubmit()">Next</button>
     </mat-card-actions>    
     </mat-card> 
     

@@ -31,6 +31,7 @@ import { NoteCardComponent } from './note-card/note-card.component';
 import { AddNoteComponent } from './add-note/add-note.component';
 import { TrashComponent } from './trash/trash.component';
 import { ArchiveComponent } from './archive/archive.component';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ArchiveComponent } from './archive/archive.component';
     AddNoteComponent,
     TrashComponent,
     ArchiveComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
