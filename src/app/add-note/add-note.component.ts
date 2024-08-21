@@ -1,5 +1,5 @@
-    import { Component, OnInit ,Output,EventEmitter} from '@angular/core';
-    import { FormBuilder,FormGroup } from '@angular/forms';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpService } from '../Services/http.service';
 import { NotesService } from '../Services/notes.service';
 
@@ -28,7 +28,6 @@ import { NotesService } from '../Services/notes.service';
 
 
       addNote=()=>{
-        let notesdata=this.notesform.value;
         let formData={
           title:this.notesform.get('title')?.value,
           description:this.notesform.get('note')?.value,

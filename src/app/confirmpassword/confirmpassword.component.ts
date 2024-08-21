@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder ,FormGroup} from '@angular/forms';
 import { RegisterServiveService } from '../Services/register-servive.service';
-import { first } from 'rxjs';
 import { NotesService } from '../Services/notes.service';
 import { Router } from '@angular/router';
 
